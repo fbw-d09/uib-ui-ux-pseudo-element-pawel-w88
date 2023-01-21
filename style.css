@@ -1,0 +1,96 @@
+:root {
+  font-size: 16px;
+}
+
+.liste ul:only-of-type {
+  font-size: 2rem;
+  margin: 1%;
+  line-height: 3;
+}
+
+.liste li::before {
+  content: " ";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(./images/quotes.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.liste li::after {
+  content: " ";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(./images/quotes.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Aufgabe 2 */
+
+.files a:only-of-type {
+  font-size: 2rem;
+  padding: 1%;
+  margin: 1%;
+  text-decoration: none;
+}
+
+.files li::after {
+  content: " ";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(./images/ms-word.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.files li:nth-child(1)::after {
+  content: " ";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(./images/pdf.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.files li:nth-child(5)::after {
+  content: " ";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(./images/pdf.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.files li:nth-child(2)::after {
+  content: " ";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(./images/ms-excel.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Aufgabe 3 */
+
+.sandwich li {
+  font-size: 2rem;
+  list-style-type: none;
+  width: 100vw;
+  height: 50px;
+}
+
+.sandwich::after,
+.sandwich::before {
+  content: " ";
+  display: inline-block;
+  width: 100%;
+  height: 2rem;
+  background: linear-gradient(45deg, blue 10%, red);
+}
